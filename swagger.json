@@ -5,15 +5,14 @@
     "version": "1.0.0",
     "description": "API pédagogique pour gérer étudiants et cours (no DB)"
   },
-  "tags": [
-    { "name": "Courses", "description": "Gestion des cours" }
-  ],
+  "tags": [{ "name": "Courses", "description": "Gestion des cours" }],
   "paths": {
     "/courses": {
-      "get": { 
-        "tags": ["Courses"], 
-        "summary": "Liste des cours", 
-        "responses": { "200": { "description": "OK" } } },
+      "get": {
+        "tags": ["Courses"],
+        "summary": "Liste des cours",
+        "responses": { "200": { "description": "OK" } }
+      },
       "post": {
         "summary": "Créer un cours",
         "requestBody": {
