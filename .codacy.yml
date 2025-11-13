@@ -1,0 +1,21 @@
+---
+engines:
+  eslint:
+    enabled: true
+    exclude_paths:
+      - 'coverage/**'
+      - 'node_modules/**'
+
+  duplication:
+    enabled: true
+    exclude_paths:
+      - 'tests/**'
+      - 'coverage/**'
+      - 'node_modules/**'
+
+exclude_paths:
+  - 'coverage/**'
+  - 'node_modules/**'
+  - '*.json'
+  - '*.md'
+  - '.github/**'

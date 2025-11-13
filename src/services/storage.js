@@ -73,9 +73,7 @@ function enroll(studentIdParam, courseIdParam) {
     return { error: 'Student already enrolled in this course' };
   }
   // Vérifie que le cours n'a pas plus de 3 étudiants
-  const enrolledCount = data.enrollments.filter(
-    (e) => e.courseId === Number(courseIdParam),
-  ).length;
+  const enrolledCount = data.enrollments.filter((e) => e.courseId === Number(courseIdParam)).length;
   if (enrolledCount >= 3) return { error: 'Course is full' };
   data.enrollments.push({
     studentId: Number(studentIdParam),
